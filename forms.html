@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+   <FORM autocomplete="off" action="https://httpbin.org/post" method="post" style="width: 100%;height: 15px;"></FORM>
+
+        <br><br>
+
+        <label for="username">name</label>
+        <input type="text" id="username" name="name" required>
+
+        <br><br>
+
+        <label for="email">email:</label>
+        <input type="email" placeholder="enter your email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" 
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&#]).{8,}" 
+               title="Must contain at least one number, one uppercase letter, one lowercase letter, one special character, and be at least 8 characters long." 
+               placeholder="enter your password" id="password"required> 
+
+        <br><br>
+
+        <label for="age">age</label>
+        <input type="number" placeholder="enter your age" id="age" min="18" max="100" name="age" required>
+
+        <br><br>
+
+        <label for="date of birth">date of birth</label>
+        <input type="date" placeholder="enter your DOB" id="date of bith" name="date of birth" required>
+
+        <br><br>
+
+        <label for="Resume">Resume</label>
+        <input type="file" placeholder="upload your resume" id="resume" accept=".pdf , .jpg , .doc , .ppt " name="resume" required>
+
+        <br><br>
+
+        <input type="checkbox" name="terms & conditions"><span>terms & conditions</span>
+
+        <br><br>
+        <label for="gender">gender:</label>
+        <input type="radio" name="gender" value="male"><span>male</span>
+        <input type="radio" name="gender" value="female"><span>female</span>
+        <input type="radio" name="gender" value="others"><span>others</span>
+
+        <br><br>
+        <label for="caste">caste</label>
+        <select name="caste">
+
+            <option>select your caste</option>
+            <option value="general">general</option>
+            <option value="BC">BC</option>
+            <option value="SC/ST">SC/ST</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="COUNTRY">COUNTRY</label>
+<select id="COUNTRY" name="COUNTRY">
+
+            <optgroup>
+
+                <option>SELECT YOUR COUNTRY</option>
+    <option value="INDIA">INDIA</option>
+    <option value="PAKISTAN">PAKISTAN</option>
+    <option value="BANGLADESH">BANGLADESH</option>
+    <option value="AMERICA">AMERICA</option>
+    <option value="RUSSIA">RUSSIA</option>
+    <option value="CHINA">CHINA</option>
+            </optgroup>
+
+            <optgroup>
+
+
+                <option>select your state</option>
+                <option value="AP">AP</option>
+                <option value="TS">TS</option>
+                <option value="TN">TN</option>
+
+            </optgroup>
+         </select>
+         <BR><BR>
+        <label for="BLOOD GROUP">BLOOD GROUP</label>
+
+        <input list="BLOOD GROUP">
+        <datalist id="BLOOD GROUP">
+
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+        
+        </datalist>
+        
+        <br><br>
+
+        <input type="submit">
+
+    </FORM>
+    
+</body>
+</html>
